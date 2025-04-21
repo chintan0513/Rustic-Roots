@@ -152,4 +152,46 @@ img.lazy.loaded {
   .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
+
+  footer {
+    padding: 1.5rem 1rem;
+  }
+
+  form {
+    padding: 2rem;
+  }
+}
+button[type="submit"] {
+  background-color: var(--primary-color); /* Deep warm brown */
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  border: none;
+  width: 50% auto;
+  padding: 12px 30px;
+  border-radius: 30px; /* Rounded corners */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+  background-color: var(--highlight); /* Gentle highlight */
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+button[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 10px var(--highlight); /* Add glow effect */
+}
+
+button[type="submit"]:active {
+  background-color: var(--accent2); /* Soft tan */
+  transform: translateY(2px); /* Subtle press effect */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
