@@ -6,7 +6,7 @@
   --accent3: #797164; /* Soft border tone */
   --highlight: #9c7e6e; /* Gentle highlight */
   --accent-color: #fefaf6; /* Soft cream background */
-  --text-dark: #3a2e28; /* Dark heading */
+  --text-color: #5c504a; /* Dark heading */
   --text-color: #4e4e4e; /* Body text */
 }
 
@@ -18,9 +18,16 @@
 
 body {
   font-family: "Lora", serif;
-  background-color: var(--accent-color);
   color: var(--text-color);
   line-height: 1.6;
+  border-radius: 15px;
+  background: linear-gradient(
+      rgba(254, 250, 246, 0.6),
+      rgba(254, 250, 246, 0.6)
+        /* rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7) */
+    ),
+    url("Photos/Engagement Party Ideas.jpeg") center/cover repeat fixed;
 }
 
 h1,
@@ -60,8 +67,34 @@ main {
   margin: auto;
 }
 
+main .btn-pr {
+  background-color: var(--primary-color);
+  border: none;
+  color: #fefaf6;
+  padding: 10px 20px;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+main .btn-pr:hover {
+  background-color: var(--highlight);
+  transform: translateY(-2px);
+}
+
 section {
   margin-bottom: 40px;
+}
+.transparent-section {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  );
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  padding: 3rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
 }
 
 .card {
@@ -70,6 +103,7 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 1rem;
+  animation: fadeInUp 0.4s ease forwards;
 }
 
 .card-container {
@@ -228,7 +262,7 @@ button[type="submit"] {
   font-family: "Lora", serif;
   font-weight: bold;
   border: none;
-  width: 50% auto;
+  width: auto;
   padding: 12px 30px;
   border-radius: 30px; /* Rounded corners */
   transition: all 0.3s ease;
@@ -251,4 +285,15 @@ button[type="submit"]:active {
   background-color: var(--accent2); /* Soft tan */
   transform: translateY(2px); /* Subtle press effect */
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
