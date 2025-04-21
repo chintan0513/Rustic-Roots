@@ -17,8 +17,15 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light  flex-row">
-        <a class="navbar-brand text-white text-center" href="#">Rustic Roots</a>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="assets/Photos/logo.jpg"
+            alt="Rustic Roots Logo"
+            style="height: 40px; margin-right: 10px;"
+          />
+          <span>Rustic Roots</span>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -30,24 +37,25 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto ">
-            <li class="nav-item ">
-              <a class="nav-link  text-center" href="index.html">Home</a>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  text-center" href="services.html">Services</a>
+              <a class="nav-link" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  text-center" href="portfolio.html"
-                >Portfolio</a
-              >
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  text-center" href="about.html">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  text-center" href="contact.html">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -65,78 +73,152 @@
 
       <section class="py-5 bg-light">
         <h2 class="text-center mb-4">Our Signature Services</h2>
-        <div class="card-container">
-          <div class="card">
-            <img src="assets/Photos/Holiday_Party.jpg" alt="Holiday Party" />
-            <h3>Holiday Party</h3>
-            <p>
-              Spread the festive cheer with cozy, classy, and customizable
-              seasonal setups.
-            </p>
-          </div>
+        <div class="container">
+          <div class="row">
+            <!-- Repeat below col-md-4 for each card -->
+            <div class="col-md-4 mb-4">
+              <div class="card service-card">
+                <img
+                  src="assets/Photos/Holiday_Party.jpg"
+                  class="card-img-top"
+                  alt="Holiday Party"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Holiday Party</h3>
+                  <p class="card-text">
+                    Spread the festive cheer with cozy, classy, and customizable
+                    seasonal setups.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          <div class="card">
-            <img src="assets/Photos/commercial.webp" alt="Commercial Decor" />
-            <h3>Corporate Events</h3>
-            <p>
-              Polished professional aesthetics tailored for product launches,
-              conferences, and galas.
-            </p>
-          </div>
+            <!-- Add remaining cards the same way -->
+            <!-- Corporate Events -->
+            <div class="col-md-4 mb-4">
+              <div class="card service-card">
+                <img
+                  src="assets/Photos/commercial.webp"
+                  class="card-img-top"
+                  alt="Corporate Events"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Corporate Events</h3>
+                  <p class="card-text">
+                    Polished professional aesthetics tailored for product
+                    launches, conferences, and galas.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          <div class="card">
-            <img src="assets/Photos/marriage.jpg" alt="Wedding Decor" />
-            <h3>Wedding Styling</h3>
-            <p>
-              Charming rustic backdrops, floral mandaps, and aisle designs that
-              whisper romance.
-            </p>
-          </div>
+            <!-- Wedding Styling -->
+            <div class="col-md-4 mb-4">
+              <div class="card service-card">
+                <img
+                  src="assets/Photos/marriage.jpg"
+                  class="card-img-top"
+                  alt="Wedding Styling"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Wedding Styling</h3>
+                  <p class="card-text">
+                    Charming rustic backdrops, floral mandaps, and aisle designs
+                    that whisper romance.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          <div class="card">
-            <img src="assets/Photos/Birthday.jpg" alt="Birthday Event" />
-            <h3>Birthday Magic</h3>
-            <p>
-              Whimsical themes, vibrant balloon arches, and playful setups for
-              every age.
-            </p>
-          </div>
+            <!-- Birthday -->
+            <div class="col-md-4 mb-4">
+              <div class="card service-card">
+                <img
+                  src="assets/Photos/Birthday.jpg"
+                  class="card-img-top"
+                  alt="Birthday"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Birthday Magic</h3>
+                  <p class="card-text">
+                    Whimsical themes, vibrant balloon arches, and playful setups
+                    for every age.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          <div class="card">
-            <img src="assets/Photos/Proposals.jpg" alt="Proposals Event" />
-            <h3>Proposal Styling</h3>
-            <p>
-              Create a moment worth a thousand “Yes!” with mood lighting and
-              dreamy décor.
-            </p>
-          </div>
+            <!-- Proposal -->
+            <div class="col-md-4 mb-4">
+              <div class="card service-card">
+                <img
+                  src="assets/Photos/Proposals.jpg"
+                  class="card-img-top"
+                  alt="Proposals"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Proposal Styling</h3>
+                  <p class="card-text">
+                    Create a moment worth a thousand “Yes!” with mood lighting
+                    and dreamy décor.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          <div class="card">
-            <img src="assets/Photos/annivesary.webp" alt="Anniversary" />
-            <h3>Anniversary Themes</h3>
-            <p>
-              Celebrate your journey of love with timeless setups and elegant
-              florals.
-            </p>
-          </div>
+            <!-- Anniversary -->
+            <div class="col-md-4 mb-4">
+              <div class="card service-card">
+                <img
+                  src="assets/Photos/annivesary.webp"
+                  class="card-img-top"
+                  alt="Anniversary"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Anniversary Themes</h3>
+                  <p class="card-text">
+                    Celebrate your journey of love with timeless setups and
+                    elegant florals.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          <div class="card">
-            <img src="assets/Photos/Bbay shower.jpeg" alt="Baby Shower" />
-            <h3>Baby Showers</h3>
-            <p>
-              Sweet, soft pastels and personalized themes for welcoming tiny
-              blessings.
-            </p>
+            <!-- Baby Shower -->
+            <div class="col-md-4 mb-4 mx-auto">
+              <div class="card service-card">
+                <img
+                  src="assets/Photos/Bbay shower.jpeg"
+                  class="card-img-top"
+                  alt="Baby Shower"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Baby Showers</h3>
+                  <p class="card-text">
+                    Sweet, soft pastels and personalized themes for welcoming
+                    tiny blessings.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
+      <!-- Why Choose Section -->
       <section class="text-center py-5">
         <h2>Why Choose Rustic Roots?</h2>
         <p class="lead mb-4">
           We're more than decorators — we're storytellers of joy.
         </p>
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
             <h4>Tailored Designs</h4>
             <p>
@@ -160,17 +242,18 @@
         </div>
       </section>
 
+      <!-- Testimonials -->
       <section class="bg-light py-5">
         <h2 class="text-center">Client Love ❤️</h2>
-        <div class="row text-center">
-          <div class="col-md-6 mb-4">
+        <div class="row text-center justify-content-center">
+          <div class="col-md-5 mb-4">
             <blockquote>
               “Rustic Roots made our wedding magical. Every detail was perfect.
               Guests still talk about it!”
             </blockquote>
             <p>— Priya & Ankit</p>
           </div>
-          <div class="col-md-6 mb-4">
+          <div class="col-md-5 mb-4">
             <blockquote>
               “Professional, creative, and timely. Our corporate gala looked
               phenomenal. Highly recommended!”
@@ -192,12 +275,19 @@
       </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-      <div class="footer-content">
+      <div class="footer-content container py-4">
         <div class="row">
-          <!-- Quick Links -->
-          <div class="col-md-3 mb-4">
-            <h4>Quick Links</h4>
+          <div class="col-md-2 text-center mb-2">
+            <img
+              src="assets/Photos/logo.jpg"
+              alt="Rustic Roots Logo"
+              style="height: 60px;"
+            />
+          </div>
+          <div class="col-md-2 text-center mb-2">
+            <h5>Quick Links</h5>
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="services.html">Services</a></li>
@@ -206,47 +296,44 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
-
-          <!-- Social Media -->
-          <div class="col-md-3 mb-4">
-            <h4>Follow Us</h4>
-            <ul class="social-media-links">
+          <div class="col-md-2 text-center mb-2">
+            <h5>Follow Us</h5>
+            <ul>
               <li>
-                <a href="https://www.instagram.com/rustic_roots9/">Instagram</a>
+                <a
+                  href="https://www.instagram.com/rustic_roots9/"
+                  target="_blank"
+                  >Instagram</a
+                >
               </li>
               <li>
                 <a href="https://www.facebook.com/rusticroots">Facebook</a>
               </li>
             </ul>
           </div>
-
-          <!-- Contact Information -->
-          <div class="col-md-3 mb-4">
-            <h4>Contact Us</h4>
+          <div class="col-md-2 text-center mb-2">
+            <h5>Contact</h5>
             <p>
               Email:
               <a href="mailto:info@rusticroots.com">info@rusticroots.com</a>
             </p>
-            <p>Phone: +1 (123) 456-7890</p>
-            <p>Address: 123 Rustic Road, Toronto, ON</p>
+            <p>Phone: +1 (437) 993-0423</p>
+            <p>3610 Dixie Rd, Mississauga, ON</p>
           </div>
-
-          <!-- Newsletter -->
-          <div class="col-md-3 mb-4">
-            <h4>Newsletter</h4>
-            <p>Stay updated with our latest events and designs.</p>
+          <div class="col-md-3 text-center mb-2">
+            <h5>Newsletter</h5>
             <form action="https://formspree.io/f/yourformid" method="POST">
               <input
                 type="email"
                 name="email"
-                placeholder="Enter your email"
+                placeholder="Enter email"
                 required
               />
               <button type="submit">Subscribe</button>
             </form>
           </div>
         </div>
-        <div class="text-center">
+        <div class="text-center mt-3">
           <p>&copy; 2025 Rustic Roots. All rights reserved.</p>
         </div>
       </div>
